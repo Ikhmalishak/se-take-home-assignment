@@ -56,14 +56,14 @@
       <!-- Create Orders -->
       <div class="card">
         <h3>Create Order</h3>
-        <button>Create Normal Order</button>
-        <button>Create VIP Order</button>
+        <button onclick="createOrder('normal')">Create Normal Order</button>
+        <button onclick="createOrder('vip')">Create VIP Order</button>
       </div>
 
       <!-- Add Bot -->
       <div class="card">
         <h3>Manage Bots</h3>
-        <button>+Bot</button>
+        <button onclick="addBot()">+Bot</button>
       </div>
 
       <!-- Orders List -->
@@ -102,5 +102,6 @@
       </div>
     </div>
 
+    <script src="script.js"></script>
   </body>
 </html>
