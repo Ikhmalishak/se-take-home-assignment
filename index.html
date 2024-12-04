@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>McDonald's Bot System</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f4f4f4;
+      }
+      h1 {
+        text-align: center;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .card {
+        background: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
+      th,
+      td {
+        padding: 10px;
+        border: 1px solid #ccc;
+        text-align: left;
+      }
+      button {
+        padding: 10px 15px;
+        border: none;
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+        border-radius: 3px;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>McDonald's Order System</h1>
+
+      <!-- Create Orders -->
+      <div class="card">
+        <h3>Create Order</h3>
+        <button>Create Normal Order</button>
+        <button>Create VIP Order</button>
+      </div>
+
+      <!-- Add Bot -->
+      <div class="card">
+        <h3>Manage Bots</h3>
+        <button>+Bot</button>
+      </div>
+
+      <!-- Orders List -->
+      <div class="card">
+        <h3>Orders</h3>
+        <table id="ordersTable">
+          <thead>
+            <tr>
+              <th>Order ID</th>
+              <th>Order Type</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Orders will be listed here -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Bots List -->
+      <div class="card">
+        <h3>Bots</h3>
+        <table id="botsTable">
+          <thead>
+            <tr>
+              <th>Bot ID</th>
+              <th>Status</th>
+              <th>Order ID</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Bots will be listed here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </body>
+</html>
